@@ -1,0 +1,6 @@
+# source: http://en.wikipedia.org/wiki/Memcached
+
+[memcached]
+title=Memcached
+description=Memcached is a general-purpose distributed memory caching system
+ports=11211/tcp

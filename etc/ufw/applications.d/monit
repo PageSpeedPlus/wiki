@@ -1,0 +1,6 @@
+# source: http://mmonit.com/monit/
+
+[monit]
+title=Monit
+description=Monit is a small Open Source utility for managing and monitoring Unix systems
+ports=2812/tcp

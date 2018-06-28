@@ -1,0 +1,26 @@
+# source: https://en.wikipedia.org/wiki/Syncthing
+
+[syncthing-transfer]
+title=Syncthing (Transfer)
+description=Syncthing is an open-source file synchronization client/server application
+ports=22000/tcp
+
+[syncthing-discovery]
+title=Syncthing (Discovery)
+description=Syncthing is an open-source file synchronization client/server application
+ports=22025/udp
+
+[syncthing-web]
+title=Syncthing (Web)
+description=Syncthing is an open-source file synchronization client/server application
+ports=8080/tcp
+
+[syncthing-full]
+title=Syncthing (Full)
+description=Syncthing is an open-source file synchronization client/server application
+ports=22000/tcp|22025/udp
+
+[syncthing-extra]
+title=Syncthing (Extra)
+description=Syncthing is an open-source file synchronization client/server application
+ports=8080,22000/tcp|22025/udp

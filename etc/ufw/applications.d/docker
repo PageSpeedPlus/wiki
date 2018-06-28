@@ -1,0 +1,6 @@
+# source: https://www.docker.com/
+
+[docker]
+title=Docker
+description=An open platform for distributed applications for developers and sysadmins
+ports=9999/tcp

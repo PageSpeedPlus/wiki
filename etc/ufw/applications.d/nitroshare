@@ -1,0 +1,16 @@
+# source: http://nitroshare.net/
+
+[nitroshare-transfer]
+title=NitroShare (Transfer)
+description=NitroShare takes the pain out of transferring files across your local network
+ports=40818/tcp
+
+[nitroshare-discovery]
+title=NitroShare (Discovery)
+description=NitroShare takes the pain out of transferring files across your local network
+ports=40816/udp
+
+[nitroshare-full]
+title=NitroShare (Full)
+description=NitroShare takes the pain out of transferring files across your local network
+ports=40816/udp|40818/tcp

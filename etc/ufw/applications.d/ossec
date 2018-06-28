@@ -1,0 +1,26 @@
+# source: http://www.ossec.net/
+
+[ossec-secure]
+title=OSSEC (Secure)
+description=OSSEC is an Open Source Host-based Intrusion Detection System that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response
+ports=1514/udp
+
+[ossec-syslog-tcp]
+title=OSSEC (Syslog TCP)
+description=OSSEC is an Open Source Host-based Intrusion Detection System that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response
+ports=514/tcp
+
+[ossec-syslog-udp]
+title=OSSEC (Syslog UDP)
+description=OSSEC is an Open Source Host-based Intrusion Detection System that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response
+ports=514/udp
+
+[ossec-syslog-full]
+title=OSSEC (Syslog Full)
+description=OSSEC is an Open Source Host-based Intrusion Detection System that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response
+ports=514
+
+[ossec-full]
+title=OSSEC (Full)
+description=OSSEC is an Open Source Host-based Intrusion Detection System that performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response
+ports=514|1514/udp
