@@ -1,5 +1,7 @@
 ![NGINX-logo](https://wiki.page-speed.ninja/assets/img/nginx-logo.png)
 
+[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/hosting/nginx/)
+
 NGINX ist ein kostenloser, Open-Source-, Hochleistungs-HTTP-Server und Reverse-Proxy sowie ein IMAP / POP3-Proxy-Server. NGINX ist bekannt für seine hohe Leistung, Stabilität, umfangreiche Funktionen, einfache Konfiguration und geringen Ressourcenverbrauch.
 
 NGINX ist einer der wenigen Server, die geschrieben wurden, um das C10K-Problem zu lösen. Im Gegensatz zu herkömmlichen Servern verlässt sich NGINX nicht auf Threads, um Anfragen zu bearbeiten. Stattdessen verwendet es eine viel besser skalierbare ereignisgesteuerte (asynchrone) Architektur. Diese Architektur verwendet kleine, aber viel wichtigere, vorhersehbare Speichermengen unter Last. Selbst wenn Sie nicht erwarten, Tausende von gleichzeitigen Anfragen zu bearbeiten, können Sie dennoch von der hohen Leistung und dem geringen Speicherbedarf von NGINX profitieren. NGINX skaliert in alle Richtungen: vom kleinsten VPS bis hin zu großen Serverclustern.
