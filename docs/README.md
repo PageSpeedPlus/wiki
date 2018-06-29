@@ -18,5 +18,5 @@
 - [WP-Cli](https://wiki.page-speed.ninja/hosting/wpcli/)
 - [ACME](https://wiki.page-speed.ninja/hosting/acme/)
 - [UFW](https://wiki.page-speed.ninja/hosting/ufw/)
-- [Fail2Ban](https://wiki.page-speed.ninja/hosting/https://wiki.page-speed.ninja/hosting/fail2ban/)
+- [Fail2Ban](https://wiki.page-speed.ninja/hosting/fail2ban/)
 - [Netdata](https://wiki.page-speed.ninja/hosting/netdata/)
