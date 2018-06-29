@@ -4,7 +4,7 @@
 
 Modul zum Löschen von Inhalten aus den FastCGI-, Proxy-, SCGI- und uWSGI-Caches von NGiNX. Zum Beispiel via PHP:
 
-- https://github.com/PageSpeedPlus/wiki/blob/master/var/www/22222/htdocs/cache/nginx/clean.php
+- [PHP Datei um FastCGI Cache zu leeren](https://raw.githubusercontent.com/PageSpeedPlus/wiki/master/var/www/22222/htdocs/cache/nginx/clean.php)
 
 #### Links
 
