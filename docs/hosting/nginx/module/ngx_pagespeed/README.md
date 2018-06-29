@@ -86,6 +86,114 @@ location /pagespeed_console { include common/acl.conf; }
 location ~ ^/pagespeed_admin { include common/acl.conf; }
 ```
 
+![ngx_PageSpeed](https://imgur.com/xxdKxWW)
+
+##  ngx_PageSpeed Modul konfigurieren
+[News zur aktuellen Version](https://www.modpagespeed.com/doc/release_notes)
+***
+
+Als Teil des NGiNX Servers wird es ebenfalls über die `nginx.conf` konfiguriert.
+
+> `nano /etc/nginx/nginx.conf`
+
+## PageSpeed für Virtual Hosts aktivieren mit folgenden Zeilen:
+
+> `pagespeed on; `
+
+> `pagespeed FileCachePath /var/ngx_pagespeed_cache; `
+
+Stell sicher dass der Cache Pfad existiert und die Nutzerrechte stimmen:
+
+```bash
+mkdir /var/ngx_pagespeed_cache
+chown -R www-data:www-data /var/ngx_pagespeed_cache
+service nginx reload
+```
+
+## PageSpeed prüfen
+
+`curl -I -p http://localhost|grep X-Page-Speed`
+
+Folgendes Ergebnis erscheint:
+
+- % Total % Received % Xferd Average Speed Time Time Time Current
+- Dload Upload Total Spent Left Speed
+- 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0
+- X-Page-Speed: 1.9.32.3-4448`
+
+PageSpeed kann auf den V-Hosts jeweils induviduell angepasst werden.
+
+![VHost Konfig](https://picload.org/view/drcoarca/nginx-vhost-pagespeed.jpg.html)
+
+## PageSpeed Filter
+
+Eine übersicht aller [Filter](https://www.modpagespeed.com/) zu bekommen dürfte schwierig werden. Da es oft für das gleiche Prinzip ähnliches gibt. Als Liste `PageSpeed Filter Referenzen` sehen Sie den Versuche diese etwas zusammen zu fassen.
+
+## PageSpeed Filter Referenzen
+
+> * Add Head
+> * Add Instrumentation
+> * Async Google AdSense
+> * Async Google Analytics
+> * Canonicalize JavaScript Libraries
+> * Collapse Whitespace
+> * Combine CSS
+> * Combine JavaScript
+> * Combine Heads
+> * Convert Meta Tags
+> * Deduplicate Inlined Images
+> * Defer JavaScript
+> * Elide Attributes
+> * Extend Cache
+> * Extend Cache PDFs
+> * Filters and Options for Optimizing Images
+> * Flatten CSS @imports
+> * Hint Resource Preloading
+> * Include JavaScript Source Maps
+> * Inline @import to Link
+> * Inline CSS
+> * Inline Google Fonts API CSS
+> * Inline JavaScript
+> * Inline Preview Images
+> * Insert Google Analytics
+> * Lazily Load Images
+> * Local Storage Cache
+> * Make Images Responsive
+> * Minify JavaScript
+> * Move CSS Above Scripts
+> * Move CSS to Head
+> * Optimize Images
+> * Outline CSS
+> * Outline JavaScript
+> * Pedantic
+> * Pre-Resolve DNS
+> * Prioritize Critical CSS
+> * Remove Comments
+> * Remove Quotes
+> * Rewrite CSS
+> * Rewrite Domain
+> * Rewrite Style Attributes
+> * Run Experiments
+> * Sprite Images
+> * Trim URLs
+
+## Anleitungen
+
+* [Konfiguration](https://www.modpagespeed.com/doc/configuration)
+* [Filter](https://www.modpagespeed.com/doc/config_filters)
+* [PageSpeed Admin Pages](https://www.modpagespeed.com/doc/admin)
+* [PageSpeed Console](https://www.modpagespeed.com/doc/console)
+* [Optimierung auf Bandbreite](https://www.modpagespeed.com/doc/optimize-for-bandwidth)
+* [Domain Mapping](https://www.modpagespeed.com/doc/domains)
+* [URL Control](https://www.modpagespeed.com/doc/restricting_urls)
+* [HTTPS Support](https://www.modpagespeed.com/doc/https_support)
+* [System Integration](https://www.modpagespeed.com/doc/system)
+* [Experimental](https://www.modpagespeed.com/doc/experiment)
+* [Starthilfe Experiment](https://www.modpagespeed.com/doc/module-run-experiment)
+* [Konsole (Manuelles Optimieren)](https://www.modpagespeed.com/doc/console)
+* [Downstream Caches](https://www.modpagespeed.com/doc/downstream-caching)
+* [Image Filter and Option Reference](https://www.modpagespeed.com/doc/reference-image-optimize)
+
 #### Links
 
 - [ngx_pagespeed](https://www.modpagespeed.com/doc/build_ngx_pagespeed_from_source)
