@@ -1,4 +1,6 @@
-# Webinoly ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+# Webinoly
+
+**[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
 
 Optimized LEMP Web Server.
 
