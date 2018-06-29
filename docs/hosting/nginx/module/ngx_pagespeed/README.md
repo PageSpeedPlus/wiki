@@ -36,7 +36,6 @@ pagespeed Statistics on;
 pagespeed StatisticsLogging on;
 pagespeed LogDir /var/log/pagespeed;
 ```
-
 ### VHost Einstellungen
 
 Die zweite ist  `/etc/nginx/common/pagespeed-vhost.conf`.
@@ -47,7 +46,6 @@ Fügen Sie nun einfach `include common/pagespeed-vhost.conf` in Ihre VHost Konfi
 ```nginx-conf
 # enable pagespeed
 pagespeed on;
-
 
 # Ensure requests for pagespeed optimized resources go to the pagespeed handler
 # and no extraneous headers get set.
@@ -88,8 +86,6 @@ location /pagespeed_console { include common/acl.conf; }
 location ~ ^/pagespeed_admin { include common/acl.conf; }
 ```
 
-![ngx_PageSpeed](https://imgur.com/xxdKxWW)
-
 ##  ngx_PageSpeed Modul konfigurieren
 [News zur aktuellen Version](https://www.modpagespeed.com/doc/release_notes)
 ***
@@ -100,9 +96,10 @@ Als Teil des NGiNX Servers wird es ebenfalls über die `nginx.conf` konfiguriert
 
 ## PageSpeed für Virtual Hosts aktivieren mit folgenden Zeilen:
 
-> `pagespeed on; `
-
-> `pagespeed FileCachePath /var/ngx_pagespeed_cache; `
+```bash
+pagespeed on; `
+pagespeed FileCachePath /var/ngx_pagespeed_cache;
+```
 
 Stell sicher dass der Cache Pfad existiert und die Nutzerrechte stimmen:
 
@@ -111,7 +108,6 @@ mkdir /var/ngx_pagespeed_cache
 chown -R www-data:www-data /var/ngx_pagespeed_cache
 service nginx reload
 ```
-
 ## PageSpeed prüfen
 
 `curl -I -p http://localhost|grep X-Page-Speed`
