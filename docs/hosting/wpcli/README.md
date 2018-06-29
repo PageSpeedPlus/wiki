@@ -1,5 +1,7 @@
 # WP-CLI
 
+**[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
+
 ![WP-CLI Logo](https://raw.githubusercontent.com/PageSpeedPlus/easyengine/master/docs/assets/img/WP-CLI-logo-landscape-black-white.png)
 
 ## WP-CLI Setup & Verwalung
