@@ -675,27 +675,9 @@ Danach muss Nginx seine Konfiguration neu laden:
 
 > **service nginx - restart**
 
-## [Aktivere Munin Proxy](http://guide.munin-monitoring.org/en/latest/example/webserver/nginx.html)
-
-> **nano /etc/nginx/sites-available/ispconfig.vhost**
-
-**Füge dies hinzu**
-
-> location /munin/static/ {
->     alias /etc/munin/static/;
-> }
-> 
-> location /munin/ {
->     proxy_pass http://localhost:4948/;
-> }
-
-> **service nginx -restart**
-
-***
-
 ## Ajenti - Minimal NGiNX GUI
 
-![Ajenti Dashboard Screenshot](http://ajenti.org/static/home/img/screens/ajenti/1.png)
+![Ajenti Dashboard Screenshot](https://wiki.page-speed.ninja/assets/img/ajenti.jpg)
 
 Ein Admin-Tool für ein zivilisierteres Zeitalter, das Ihnen eine schnelle und sichere Möglichkeit bietet, eine entfernte Linux-Box jederzeit mit alltäglichen Tools wie einem Web-Terminal, Texteditor, Dateimanager und anderen zu verwalten.
 
