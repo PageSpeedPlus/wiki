@@ -4,6 +4,6 @@
 
 #### Links
 
-* http://nginx.org/en/docs/http/nginx_ngx_cache_purge
+* http://nginx.org/en/docs/http/
 
 [Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)
