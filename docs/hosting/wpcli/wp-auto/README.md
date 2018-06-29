@@ -1,12 +1,14 @@
-# WP-CLI
+# WP-Auto
 
 **[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
+
+In WordPress Verzeichnis verschieben:
 
 ```bash
 cd /var/www/wpnginx.tk/htdocs
 ```
 
-## WP Auto
+WordPress automatisch konfigurieren/Skript starten:
 
 ```bash
 bash <(wget --no-check-certificate -O - https://raw.githubusercontent.com/PageSpeedPlus/wiki/master/script/wpcli/wp-auto.sh)
