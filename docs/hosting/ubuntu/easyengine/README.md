@@ -1,5 +1,7 @@
 # EasyEngine
 
+**[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
+
 ## Voraussetzung
 
 ### OS Minimal Installation
