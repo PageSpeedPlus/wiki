@@ -1,4 +1,4 @@
-![NGINX-logo](https://raw.githubusercontent.com/SpeedWP/ispconfig-nginx-pagespeed/master/docs/Logos/NGINX-logo-rgb-small.png)
+![NGINX-logo](https://wiki.page-speed.ninja/assets/img/nginx-logo.png)
 
 NGINX ist ein kostenloser, Open-Source-, Hochleistungs-HTTP-Server und Reverse-Proxy sowie ein IMAP / POP3-Proxy-Server. NGINX ist bekannt für seine hohe Leistung, Stabilität, umfangreiche Funktionen, einfache Konfiguration und geringen Ressourcenverbrauch.
 
