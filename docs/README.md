@@ -16,6 +16,7 @@
     - [ngx_http_geoip_module](https://wiki.page-speed.ninja/hosting/nginx/module/ngx_http_geoip_module)
     - [ngx_http_redis](https://wiki.page-speed.ninja/hosting/nginx/module/ngx_http_redis)
 - [WP-Cli](https://wiki.page-speed.ninja/hosting/wpcli/)
+    - [WP-Auto](https://wiki.page-speed.ninja/hosting/wpcli/wp-auto/)
 - [ACME](https://wiki.page-speed.ninja/hosting/acme/)
 - [UFW](https://wiki.page-speed.ninja/hosting/ufw/)
 - [Fail2Ban](https://wiki.page-speed.ninja/hosting/fail2ban/)
