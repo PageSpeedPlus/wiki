@@ -10,26 +10,26 @@ Prüfen Sie immer welche Mimetypes Sie nutzen. Den in den meisten Fällen gibt e
 types {
     text/html                             html htm shtml;
     text/css                              css;
-    text/xml							                xml;
+    text/xml				  xml;
     image/jpeg                            jpeg jpg;
-	  image/png                             png;
-	  image/gif                             gif;
-	  image/svg+xml                         svg svgz;
+    image/png                             png;
+    image/gif                             gif;
+    image/svg+xml                         svg svgz;
     image/webp                            webp;
     application/javascript                js;
     application/atom+xml                  atom;
     application/rss+xml                   rss;
-	  application/font-woff                 woff;
+    application/font-woff                 woff;
     application/font-woff2                woff2;
-	  application/json                      json;
+    application/json                      json;
     application/pdf                       pdf;
-	  application/zip                       zip;
-	  audio/mpeg                            mp3;
+    application/zip                       zip;
+    audio/mpeg                            mp3;
     audio/ogg                             ogg;
     audio/x-m4a                           m4a;
     video/mp4                             mp4;
     video/mpeg                            mpeg mpg;	
-	  video/webm                            webm;
+    video/webm                            webm;
 
 	
     text/mathml                           mml;
