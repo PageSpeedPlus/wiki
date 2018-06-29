@@ -9,7 +9,7 @@ cd /var/www/wpnginx.tk/htdocs
 ## WP Auto
 
 ```bash
-bash <(wget --no-check-certificate -O - https://raw.githubusercontent.com/PageSpeedPlus/easyengine/master/bash/wp-auto)
+bash <(wget --no-check-certificate -O - https://raw.githubusercontent.com/PageSpeedPlus/wiki/master/script/wpcli/wp-auto.sh)
 ```
 
 ### Suchmaschinen die Indexierung verbieten.
