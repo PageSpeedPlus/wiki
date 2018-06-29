@@ -2,6 +2,8 @@
 
 [Zu NGiNX Module zurück](https://wiki.page-speed.ninja/hosting/nginx/module/)
 
+![ngx_pagespeed_horizontal](https://github.com/PageSpeedPlus/wiki/blob/master/docs/assets/img/ngx_pagespeed-logo-horizontal.png)
+
 ## ngx_pagespeed Konfiguration
 
 Wir verwenden zwei Dateien, um die Seitengeschwindigkeitskonfiguration mit Nginx einzustellen
