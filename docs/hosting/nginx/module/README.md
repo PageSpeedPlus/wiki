@@ -6,11 +6,11 @@ Im Folgenden finden Sie eine Liste mit Modulen von Drittanbietern für NGINX und
 
 [NGINX 3rd Party Modules](https://www.nginx.com/resources/wiki/modules/)
 
-* [ngx_pagespeed](https://wiki.page-speed.ninja/hosting/nginx/ngx_pagespeed/)
-* [ngx_http_geoip_module](https://wiki.page-speed.ninja/hosting/nginx/ngx_http_geoip_module/)
-* [nginx_ngx_cache_purge](https://wiki.page-speed.ninja/hosting/nginx/nginx_ngx_cache_purge/)
-* [ngx_http_redis](https://www.nginx.com/resources/wiki/modules/redis/)
-* [nginx_dynamic_tls_records.patch](https://wiki.page-speed.ninja/hosting/nginx/nginx_dynamic_tls_records.patch/)
+- [ngx_pagespeed](https://wiki.page-speed.ninja/hosting/nginx/ngx_pagespeed/)
+- [ngx_http_geoip_module](https://wiki.page-speed.ninja/hosting/nginx/ngx_http_geoip_module/)
+- [nginx_ngx_cache_purge](https://wiki.page-speed.ninja/hosting/nginx/nginx_ngx_cache_purge/)
+- [ngx_http_redis](https://www.nginx.com/resources/wiki/modules/redis/)
+- [nginx_dynamic_tls_records.patch](https://wiki.page-speed.ninja/hosting/nginx/nginx_dynamic_tls_records.patch/)
 - [ngx_http_headers_module](http://nginx.org/en/docs/http/ngx_http_headers_module.html)
 - [ngx_http_limit_req_module](http://nginx.org/en/docs/http/ngx_http_limit_req_module.html)
 - [ngx_http_ssl_module](http://nginx.org/en/docs/http/ngx_http_ssl_module.html)
