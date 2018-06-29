@@ -6,24 +6,38 @@ NGINX ist einer der wenigen Server, die geschrieben wurden, um das C10K-Problem 
 
 NGINX betreibt mehrere Websites mit hoher Sichtbarkeit, darunter Netflix, Hulu, Pinterest, CloudFlare, Airbnb, WordPress.com, GitHub, SoundCloud, Zynga, Eventbrite, Zappos, Medientempel, Heroku, RightScale, Engine Yard, MaxCDN und viele andere.
 
-* [Installieren & Kompilieren](https://github.com/SpeedWP/ispconfig-nginx-pagespeed/wiki/NGiNX#installieren--kompilieren)
-* [NGiNX Module](https://github.com/SpeedWP/ispconfig-nginx-pagespeed/wiki/NGiNX#nginx-module)
-* [Symlinks (sites-enabled)](https://github.com/SpeedWP/ispconfig-nginx-pagespeed/wiki/NGiNX#symlinks-sites-enabled)
-* [SVG & WebP in NGiNX](https://github.com/SpeedWP/ispconfig-nginx-pagespeed/wiki/NGiNX#svg--webp-in-nginx)
-
-
 ## Installieren & Kompilieren
 
-* [Compiling and Installing from Source](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#compiling-and-installing-from-source)
-* [Installing NGINX Dependencies](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-nginx-dependencies)
-* [NGiNX Auto Install](https://github.com/Angristan/nginx-autoinstall)
+- [Compiling and Installing from Source](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#compiling-and-installing-from-source)
+- [Installing NGINX Dependencies](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-nginx-dependencies)
+- [NGiNX Auto Install](https://github.com/Angristan/nginx-autoinstall)
 
-## NGiNX Konfiguration - `/etc/nginx/nginx.conf`
+## Konfiguration
 
+Globale Konfigdatei: 
+
+`/etc/nginx/nginx.conf`
+
+vHost Konfigdatei: 
+
+`/etc/nginx/sites-available/`
+
+### Symlinks (sites-enabled)
+
+Um eine **VHost Konfigurationsdatei** aus `/etc/nginx/sites-available/` zu aktivieren muss ein **Symlink** unter `/etc/nginx/sites-enabled/` erstellt werden. Ihr könnt unter `/etc/nginx/sites-available/ `also eine ganze Sammlung von vHosts anlegen und dann bei bedarf mit einem Symlink aktivieren. Es empfiehlt sich den Symlink gleich zu bennen wie den vHost für eine gute Übersicht zu behalten.
+
+
+Um beispielsweise einen Symlink für eine RoundCube vHost Konfiguration zu erstellen, wird folgender Befehl genutzt:
+> **ln -s /etc/nginx/sites-available/roundcube.vhost /etc/nginx/sites-enabled/roundcube.vhost**
+
+Danach muss Nginx seine Konfiguration neu laden:
+> **service nginx restart**
+
+![sd](https://imgur.com/bLCU8MW)
 
 ### keepalive_timeout, sendfile, tcp_nopush, tcp_nodelay
 
-Setzen Sie keepalive_timeout auf einen sinnvollen Wert, wie z.B. zwei Sekunden. Erlauben Sie sendfile, tcp_nopush und tcp_nodelay:
+Setzen Sie `keepalive_timeout` auf einen sinnvollen Wert, wie z.B. zwei Sekunden. Erlauben Sie `sendfile`, `tcp_nopush` und `tcp_nodelay`:
 
 ```bash
 nano /etc/nginx/nginx.conf
@@ -79,22 +93,22 @@ ssl_prefer_server_ciphers on;
 
 ### Benutzen des FastCGI Caches
 
-Haben Sie cachebaren PHP Inhalt, so können Sie den Nginx FastCGI Cache benutzen um diesen zu cachen. Fügen Sie dazu in Ihrer nginx.conf eine Zeile ähnlich dieser ein:
+Haben Sie cachebaren PHP Inhalt, so können Sie den Nginx FastCGI Cache benutzen um diesen zu cachen. Fügen Sie dazu in Ihrer `nginx.conf` eine Zeile ähnlich dieser ein:
 
 ```nginx-conf
 fastcgi_cache_path /var/cache/nginx levels=1:2 keys_zone=microcache:10m max_size=1000m inactive=60m;
 ```
 
-Das Cacheverzeichnis /var/cache/nginx muss existieren und von Nginx beschreibbar sein:
+Das Cacheverzeichnis `/var/cache/nginx` muss existieren und von Nginx beschreibbar sein:
 
 ```nginx-conf
 mkdir /var/cache/nginx
 chown www-data:www-data /var/cache/nginx
 ```
 
-(Druch Benutzung von tmpfs können Sie das Verzeichnis sogar direkt im Speicher Ihres Servers platzieren, was einen weiteren Geschwindigkeitsvorteil erbringt - schauen Sie sich dazu dieses Howto an: Storing Files/Directories In Memory With tmpfs).
+(Druch Benutzung von tmpfs können Sie das Verzeichnis sogar direkt im Speicher Ihres Servers platzieren, was einen weiteren Geschwindigkeitsvorteil erbringt - schauen Sie sich dazu dieses Howto an: Storing Files/Directories In Memory With `tmpfs`).
 
-Fügen Sie in Ihrer vHost Konfiguration folgenden Block zur location ~ .php$ {} Sektion hinzu (wann Inhalte gecached werden und wann nicht können Sie hier einstellen):
+Fügen Sie in Ihrer vHost Konfiguration folgenden Block zur location `~ .php$ {}` Sektion hinzu (wann Inhalte gecached werden und wann nicht können Sie hier einstellen):
 
 ```nginx-conf
 set $no_cache "";
@@ -124,7 +138,7 @@ fastcgi_pass_header Cookie;
 fastcgi_ignore_headers Cache-Control Expires Set-Cookie;
 ```
 
-Der komplette location ~ .php$ {} Block sähe also folgendermaßen aus:
+Der komplette location `~ .php$ {}` Block sähe also folgendermaßen aus:
 
 ```nginx-conf
 location ~ .php$ {
@@ -172,7 +186,7 @@ Hier können Sie mehr zu diesem Thema nachlesen: Why You Should Always Use Nginx
 
 ### Benutzung von FastCGI Buffern
 
-Sie können in Ihrer vHost Konfiguration folgende Zeilen zur location ~ .php$ {} Sektion hinzufügen:
+Sie können in Ihrer vHost Konfiguration folgende Zeilen zur location `~ .php$ {}` Sektion hinzufügen:
 
 ```nginx-conf
 [...]
@@ -184,7 +198,7 @@ fastcgi_read_timeout 240;
 [...]
 ```
 
-Die ganze location ~ .php$ {} Sektion könnte wie folgt aussehen:
+Die ganze location `~ .php$ {}` Sektion könnte wie folgt aussehen:
 
 ```
 [...]
@@ -206,8 +220,9 @@ fastcgi_read_timeout 240;
 [...]
 ```
 
-#### 2.8 Benutzung von memcached
-nginx kann ganze Seiten direkt aus memcached auslesen. Ist Ihre Webanwendung also dazu fähig, ganze Seiten in memcached zu speichern, kann nginx diese Seiten auslesen. Eine Beispielkonfiguration (in Ihrem vHost) könnte folgendermaßen aussehen:
+### Benutzung von Memcached
+
+nginx kann ganze Seiten direkt aus Memcached auslesen. Ist Ihre Webanwendung also dazu fähig, ganze Seiten in Memcached zu speichern, kann NGiNX diese Seiten auslesen. Eine Beispielkonfiguration (in Ihrem vHost) könnte folgendermaßen aussehen:
 
 ```
 [...]
@@ -272,7 +287,7 @@ expires 365d;
 [...]
 `````
 
-#### 2.10 Logging bei statischen Dateien deaktivieren
+### Logging bei statischen Dateien deaktivieren
 
 Normalerweise macht es keinen Sinn Zugriffe auf Bilder oder CSS im Zugriffslog zu protokollieren. Um Disk I/O zu minimieren können Sie deren Protokollierung deaktivieren, zum Beispiel folgendermaßen:
 
@@ -285,7 +300,7 @@ access_log off;
 [...]
 ```
 
-#### 3.3 PHP-FPM Notfalleinstellungen
+### PHP-FPM Notfalleinstellungen
 
 Dies ist eher eine Vorsorgeeinstellung als eine, die die Leistung betrifft: PHP-FPM kann sich selbst neustarten, wenn es aufhört zu funktionieren:
 
@@ -315,7 +330,7 @@ process_control_timeout = 10s
 [...]
 ```
 
-#### 3.4 Benutzung des ondemand Prozessmanagers bei PHP >= 5.3.9
+### Benutzung des ondemand Prozessmanagers bei PHP >= 5.3.9
 
 Benutzen Sie PHP >= 5.3.9 so können Sie den ondemand Prozessmanager in einem PHP-FPM Pool anstatt von static oder dynamic benutzen, dies wird einigen Arbeitsspeicher einsparen:
 
@@ -327,7 +342,7 @@ pm.process_idle_timeout = 5s
 [...]
 ```
 
-#### 3.5 Benutzung von Unix Sockets anstatt von TCP Sockets
+### Benutzung von Unix Sockets anstatt von TCP Sockets
 
 Um Netzwerkoverhead zu reduzieren sollten Sie Ihre Pools anweisen, Unix Sockets anstatt von TCP Sockets zu benutzen:
 
@@ -341,7 +356,7 @@ listen.mode = 0660
 [...]
 ```
 
-Ändern Sie dies, müssen Sie natürlich die location ~ .php$ {} Sektion in Ihrem nginx vHost anpassen, sodass der Socket benutzt wird (fastcgi_pass unix:/var/lib/php5-fpm/www.sock; anstatt von fastcgi_pass 127.0.0.1:9000;):
+Ändern Sie dies, müssen Sie natürlich die location `~ .php$ {}` Sektion in Ihrem nginx vHost anpassen, sodass der Socket benutzt wird (fastcgi_pass unix:/var/lib/php5-fpm/www.sock; anstatt von fastcgi_pass 127.0.0.1:9000;):
 
 ```
 [...]
@@ -358,9 +373,9 @@ fastcgi_intercept_errors on;
 [...]
 ```
 
-#### 3.6 Vermeiden Sie 502 Bad Gateway Fehler mit Sockets auf geschäftigen Seiten
+### Vermeiden Sie `502 Bad Gateway` Fehler mit Sockets auf geschäftigen Seiten
 
-Benutzen Sie Unix Sockets mit PHP-FPM, so könnten Sie 502 Bad Gateway Fehlern auf oft besuchten Seiten begegnen. Um dies zu vermeiden, erhöhen Sie die maximale Anzahl an erlaubten Verbindungen mit einem Socket. Öffnen Sie /etc/sysctl.conf...
+Benutzen Sie Unix Sockets mit PHP-FPM, so könnten Sie `502 Bad Gateway` Fehlern auf oft besuchten Seiten begegnen. Um dies zu vermeiden, erhöhen Sie die maximale Anzahl an erlaubten Verbindungen mit einem Socket. Öffnen Sie `/etc/sysctl.conf`...
 
 `nano /etc/sysctl.conf`
 
@@ -517,9 +532,6 @@ location ~* /wp-includes/.*\.php$ {
 
 ***
 
-
-## nano `/etc/nginx/nginx.conf`
-
 ## TLS - A-Rating SSL Zertifikate
 
 Ich überschreibe alle nginx ssl-Tags in ISPconfig-Templates, da dies unseren Websites eine A + Bewertung bei Qualys SSL-Labs gibt.
@@ -651,21 +663,6 @@ Wenn Sie möchten, dass HSTS auf alle Subdomains angewendet wird, verwenden Sie 
 
 Das ist es.
 
-
-## vHost
-
-### Symlinks (sites-enabled)
-
-Um eine **VHost Konfigurationsdatei** aus `/etc/nginx/sites-available/` zu aktivieren muss ein **Symlink** unter `/etc/nginx/sites-enabled/` erstellt werden. Ihr könnt unter `/etc/nginx/sites-available/ `also eine ganze Sammlung von vHosts anlegen und dann bei bedarf mit einem Symlink aktivieren. Es empfiehlt sich den Symlink gleich zu bennen wie den vHost für eine gute Übersicht zu behalten.
-
-
-Um beispielsweise einen Symlink für eine RoundCube vHost Konfiguration zu erstellen, wird folgender Befehl genutzt:
-> **ln -s /etc/nginx/sites-available/roundcube.vhost /etc/nginx/sites-enabled/roundcube.vhost**
-
-Danach muss Nginx seine Konfiguration neu laden:
-> **service nginx restart**
-
-![sd](https://imgur.com/bLCU8MW)
 
 ## Aktivere HTTP/2 für das Dashbord von ISPConfig
 
