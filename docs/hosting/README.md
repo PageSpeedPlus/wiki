@@ -2,6 +2,105 @@
 
 **[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
 
+## Mimetypes
+
+Prüfen Sie immer welche Mimetypes Sie nutzen. Den in den meisten Fällen gibt es ein Format das sich am besten eignet. Wenn man diese Mal hervorhebt und dann konsequent einsetzt können Sie auf unnötige Kompatibilität gut verzichten. Dazu kommt dass bei richtiger Anwendung der verschiedenen Formate Performance und Qualität gewonnen wird.
+
+```nginx
+types {
+    text/html                             html htm shtml;
+    text/css                              css;
+    text/xml							                xml;
+    image/jpeg                            jpeg jpg;
+	  image/png                             png;
+	  image/gif                             gif;
+	  image/svg+xml                         svg svgz;
+    image/webp                            webp;
+    application/javascript                js;
+    application/atom+xml                  atom;
+    application/rss+xml                   rss;
+	  application/font-woff                 woff;
+    application/font-woff2                woff2;
+	  application/json                      json;
+    application/pdf                       pdf;
+	  application/zip                       zip;
+	  audio/mpeg                            mp3;
+    audio/ogg                             ogg;
+    audio/x-m4a                           m4a;
+    video/mp4                             mp4;
+    video/mpeg                            mpeg mpg;	
+	  video/webm                            webm;
+
+	
+    text/mathml                           mml;
+    text/vnd.sun.j2me.app-descriptor      jad;
+    text/vnd.wap.wml                      wml;
+    text/x-component                      htc;
+
+    image/tiff                            tif tiff;
+    image/vnd.wap.wbmp                    wbmp;
+    image/x-icon                          ico;
+    image/x-jng                           jng;
+    image/x-ms-bmp                        bmp;
+
+
+
+    application/java-archive              jar war ear;
+    application/mac-binhex40              hqx;
+    application/msword                    doc;
+    application/postscript                ps eps ai;
+    application/rtf                       rtf;
+    application/vnd.apple.mpegurl         m3u8;
+    application/vnd.ms-excel              xls;
+    application/vnd.ms-fontobject         eot;
+    application/vnd.ms-powerpoint         ppt;
+    application/vnd.wap.wmlc              wmlc;
+    application/vnd.google-earth.kml+xml  kml;
+    application/vnd.google-earth.kmz      kmz;
+    application/x-7z-compressed           7z;
+    application/x-cocoa                   cco;
+    application/x-java-archive-diff       jardiff;
+    application/x-java-jnlp-file          jnlp;
+    application/x-makeself                run;
+    application/x-perl                    pl pm;
+    application/x-pilot                   prc pdb;
+    application/x-rar-compressed          rar;
+    application/x-redhat-package-manager  rpm;
+    application/x-sea                     sea;
+    application/x-shockwave-flash         swf;
+    application/x-stuffit                 sit;
+    application/x-tcl                     tcl tk;
+    application/x-x509-ca-cert            der pem crt;
+    application/x-xpinstall               xpi;
+    application/xhtml+xml                 xhtml;
+    application/xspf+xml                  xspf;
+
+
+    application/octet-stream              bin exe dll;
+    application/octet-stream              deb;
+    application/octet-stream              dmg;
+    application/octet-stream              iso img;
+    application/octet-stream              msi msp msm;
+
+    application/vnd.openxmlformats-officedocument.wordprocessingml.document    docx;
+    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet          xlsx;
+    application/vnd.openxmlformats-officedocument.presentationml.presentation  pptx;
+
+    audio/midi                            mid midi kar;
+    audio/x-realaudio                     ra;
+
+    video/3gpp                            3gpp 3gp;
+    video/mp2t                            ts;
+    video/quicktime                       mov;
+    video/x-flv                           flv;
+    video/x-m4v                           m4v;
+    video/x-mng                           mng;
+    video/x-ms-asf                        asx asf;
+    video/x-ms-wmv                        wmv;
+    video/x-msvideo                       avi;
+}
+```
+
 ## Standartports & Services
 
 Unter Debian/Ubuntu sind diese Services auch per Name ansprechbar. Häufig wird bei UFW Firewallregeln anstatt via Port über den Servicenamen konfiguriert. Folgende Servicenamen werden diesen Ports zugeordnet:
