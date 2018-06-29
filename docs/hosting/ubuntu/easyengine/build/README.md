@@ -2,7 +2,7 @@
 
 Compile and install the latest nginx releases with EasyEngine
 
-![nginx-ee](https://raw.githubusercontent.com/VirtuBox/nginx-ee/master/nginx-ee.png)
+![nginx-ee](https://wiki.page-speed.ninja/assets/img/nginx-ee.png)
 
 ## nginx-ee [Github page](https://virtubox.github.io/nginx-ee/) now available
 
