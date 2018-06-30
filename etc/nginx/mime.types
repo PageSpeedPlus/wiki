@@ -1,8 +1,8 @@
 types {
     text/html                             html htm shtml;
     text/css                              css;
-	text/plain                            txt;
-    text/xml				  			  xml;
+    text/plain                            txt;
+    text/xml				  xml;
     image/jpeg                            jpeg jpg;
     image/png                             png;
     image/gif                             gif;
