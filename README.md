@@ -2,6 +2,9 @@
 
 **[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
 
+- https://www.blogmojo.de/wordpress-plugins-dsgvo/#4_statistik-plugins
+- https://docs.google.com/spreadsheets/d/1uYVTBi691zpuRi66FJCbzwVELWoTrm4H8gRI_uoqYZs/edit#gid=1362716178
+
 You can use the [editor on GitHub](https://github.com/PageSpeedPlus/wiki/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
