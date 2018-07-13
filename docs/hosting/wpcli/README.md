@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/PageSpeedPlus/easyengine/master/docs/assets/img/WP-CLI-logo-landscape-black-white.png" align="right">
+
 # WP-CLI
 
 ![WP-CLI Logo](https://raw.githubusercontent.com/PageSpeedPlus/easyengine/master/docs/assets/img/WP-CLI-logo-landscape-black-white.png)
