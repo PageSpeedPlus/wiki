@@ -474,6 +474,7 @@ wp rocket deactivate
 
 # Cache komplett leeren 
 wp rocket clean
+
 # Cache bestimmer Post oder Seiten leeren
 wp rocket clean --post_id=<post_id> --permalink=<permalink> --lang=<lang> --blog_id=<blog_id>
 
