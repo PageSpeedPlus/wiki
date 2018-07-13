@@ -439,7 +439,8 @@ The following commands are supported by ElasticPress:
 
 Here’s a patch that implements a wp-cli command, with which you can rebuild the sitemap from the command line.
 
-https://wordpress.org/support/topic/patch-for-wp-cli-command-2/
+* https://wordpress.org/support/topic/patch-for-wp-cli-command-2/
+* https://github.com/wp-cli/google-sitemap-generator-cli
 
 ```bash
 # XML Sitemap neu generieren
