@@ -385,6 +385,8 @@ User zu Netzwerkadmin machen
 
 ## Kommandos einzelner WordPress Plugins
 
+
+
 ### ElasticPress
 
 * [GitHub](https://github.com/10up/ElasticPress)
@@ -433,5 +435,13 @@ The following commands are supported by ElasticPress:
 
 * `wp elasticpress status`
 
+### Google XML Sitemaps
 
+Here’s a patch that implements a wp-cli command, with which you can rebuild the sitemap from the command line.
 
+https://wordpress.org/support/topic/patch-for-wp-cli-command-2/
+
+```bash
+# XML Sitemap neu generieren
+wp google-sitemap rebuild
+```
