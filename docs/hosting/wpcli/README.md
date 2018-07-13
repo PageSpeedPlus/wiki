@@ -451,6 +451,8 @@ wp google-sitemap rebuild
 
 ### WP Rocket
 
+* https://github.com/GeekPress/wp-rocket-cli
+
 This repository contains a [WP-CLI command](https://github.com/wp-cli/wp-cli)  for the [WP Rocket](http://wp-rocket.me) plugin. After installing this plugin, you will have access to a `wp rocket` command.
 
 #### Installing
