@@ -442,6 +442,8 @@ Here’s a patch that implements a wp-cli command, with which you can rebuild th
 * https://wordpress.org/support/topic/patch-for-wp-cli-command-2/
 * https://github.com/wp-cli/google-sitemap-generator-cli
 
+#### Beispiel
+
 ```bash
 # XML Sitemap neu generieren
 wp google-sitemap rebuild
