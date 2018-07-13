@@ -484,3 +484,37 @@ wp rocket preload
 # Generiere .htaccess, advanced-cache.php oder die WP Rocket Konfigdatei neu.
 wp rocket regenerate --file=<file>
 ```
+
+### WP Super Cache (wp super-cache)
+
+* https://github.com/wp-cli/wp-super-cache-cli
+
+This repository contains a [WP-CLI plugin](https://github.com/wp-cli/wp-cli)  for the [WP Super Cache Wordpress plugin](https://wordpress.org/plugins/wp-super-cache/).  After installing this plugin, a Wordpress administrator will have access to a `wp super-cache` command
+
+#### Installing
+
+For instructions on installing this, and other, WP-CLI community packages, read the [Community Packages](https://github.com/wp-cli/wp-cli/wiki/Community-Packages) section of the WP-CLI Wiki.
+
+#### Kommandos
+
+See 'wp help super-cache <command>' for more information on a specific command.
+
+```bash
+# Cache deaktivieren
+wp super-cache disable
+
+# Cache aktivieren
+wp super-cache enable
+
+# Cache komplett leeren 
+wp super-cache flush
+
+# Cache bestimmer Post oder Seiten leeren
+wp super-cache flush [--post_id=<post-id>] [--permalink=<permalink>]
+
+# Preload Cache
+wp super-cache preload [--status] [--cancel]
+
+# WP Super Cache Status
+wp super-cache status     
+```
