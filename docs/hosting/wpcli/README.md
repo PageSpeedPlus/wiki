@@ -292,7 +292,7 @@ wp plugin install w3-total-cache https://example.org/plugins/my-super-commercial
 **WordPress Plugin installieren und aktivieren**
 
 ```bash
-wp plugin install https://example.org/plugins/my-super-commercial-plugin.zip --activate my-super-commercial-plugin
+wp plugin install https://github.com/afragen/github-updater/archive/develop.zip --activate github-updater
 wp plugin install --activate w3-total-cache nginx-helper
 ```
 
