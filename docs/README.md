@@ -1,5 +1,7 @@
 # Wiki
 
+## _Inhaltsverzeichnis_
+
 ## [Hosting](https://wiki.page-speed.ninja/hosting/)
 
 - [Ubuntu](https://wiki.page-speed.ninja/hosting/ubuntu/)
@@ -21,3 +23,5 @@
 - [UFW](https://wiki.page-speed.ninja/hosting/ufw/)
 - [Fail2Ban](https://wiki.page-speed.ninja/hosting/fail2ban/)
 - [Netdata](https://wiki.page-speed.ninja/hosting/netdata/)
+
+[Inhaltsverzeichnis](#inhaltsverzeichnis)
