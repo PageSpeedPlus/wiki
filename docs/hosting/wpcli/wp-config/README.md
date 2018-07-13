@@ -1,6 +1,8 @@
 ### wp config
 
-Generates and reads the wp-config.php file.
+Generates and reads the wp-config.php file. 
+
+- https://github.com/wp-cli/config-command
 
 ~~~
 wp config
