@@ -448,3 +448,36 @@ Here’s a patch that implements a wp-cli command, with which you can rebuild th
 # XML Sitemap neu generieren
 wp google-sitemap rebuild
 ```
+
+### WP Rocket
+
+This repository contains a [WP-CLI command](https://github.com/wp-cli/wp-cli)  for the [WP Rocket](http://wp-rocket.me) plugin. After installing this plugin, you will have access to a `wp rocket` command.
+
+#### Installing
+
+If you're using WP-CLI v0.23.0 or later, you can install this package with:
+
+```bash
+wp package install geekpress/wp-rocket-cli
+```
+
+#### Kommandos:
+
+```bash
+# Set WP_CACHE to true.
+wp rocket activate
+
+# Set WP_CACHE to false.
+wp rocket deactivate
+
+# Cache komplett leeren 
+wp rocket clean
+# Cache bestimmer Post oder Seiten leeren
+wp rocket clean --post_id=<post_id> --permalink=<permalink> --lang=<lang> --blog_id=<blog_id>
+
+# Preload Cache
+wp rocket preload
+
+# Generiere .htaccess, advanced-cache.php oder die WP Rocket Konfigdatei neu.
+wp rocket regenerate --file=<file>
+```
