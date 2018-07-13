@@ -4,19 +4,42 @@
 
 **[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
 
-* Unterpunkt 1
-    * Unterpunkt 1.1
-    * Unterpunkt 1.1
-    * Unterpunkt 1.1
-* Unterpunkt 2
-* Unterpunkt 3
-    * Unterpunkt 3.1
-        * Unterpunkt 3.1.1
-        * Unterpunkt 3.1.1
-    * Unterpunkt 3.2
-    * Unterpunkt 3.3
-* Unterpunkt 4
-* Unterpunkt 5
+## _Inhaltsverzeichnis_
+
+  * [Unterpunkt 1](#unterpunkt-1)
+    * [Unterpunkt 1.1](#idea)
+    * [Unterpunkt 1.2](#features)
+  * [Unterpunkt 2](#installation)
+  * [Unterpunkt 3](#uninstallation)
+  * [Unterpunkt 4](#available-plugins)
+  * [Unterpunkt 5](#usage)
+    * [Unterpunkt 5.1](#check-available-plugins)
+    * [Unterpunkt 5.2](#check-available-versions-for-each-plugin)
+    * [Unterpunkt 5.3](#create-an-environment)
+    * [Unterpunkt 5.4](#activatedeactivate-environment)
+      * [Unterpunkt 5.4.1](#activating-in-a-new-shell)
+      * [Unterpunkt 5.4.2](#activating-in-the-same-shell)
+    * [Unterpunkt 5.5](#get-list-of-environments)
+    * [Unterpunkt 5.6](#get-current-activated-environment)
+    * [Unterpunkt 5.7](#do-something-in-environment-without-enabling-it)
+    * [Unterpunkt 5.8](#get-help)
+    * [Unterpunkt 5.9](#get-help-for-a-command)
+  * [Unterpunkt 6](#how-to-add-a-plugin)
+    * [Unterpunkt 6.1](#mandatory-elements)
+      * [Unterpunkt 6.1.1](#plug_list_versions)
+      * [Unterpunkt 6.1.2](#plug_url_for_download)
+      * [Unterpunkt 6.1.3](#plug_build)
+    * [Unterpunkt 6.2](#optional-elements)
+      * [Unterpunkt 6.2.1](#variables)
+      * [Unterpunkt 6.2.2](#functions)
+    * [Unterpunkt 6.3](#examples)
+  * [Unterpunkt 7](#example-of-the-usage)
+  * [Unterpunkt 8](#dependencies)
+  * [Unterpunkt 9](#supported-os)
+  * [Unterpunkt 10](#tests)
+  * [Unterpunkt 11](#version-history)
+  * [Unterpunkt 12](#license)
+  * [Unterpunkt 13](#readme-in-another-language)
 - https://www.blogmojo.de/wordpress-plugins-dsgvo/#4_statistik-plugins
 - https://docs.google.com/spreadsheets/d/1uYVTBi691zpuRi66FJCbzwVELWoTrm4H8gRI_uoqYZs/edit#gid=1362716178
 
