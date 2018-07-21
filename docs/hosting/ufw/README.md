@@ -1,8 +1,26 @@
-# UFW
+# UFW (Uncomplicated Firewall)
 
 **[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
 
-## cloudflare-ufw
+## Services
+
+Sie können auch via Servicenamen zulassen oder ablehnen, da UFW aus `/etc/services` liest, um eine Liste der Dienste zu erhalten:
+
+`less /etc/services`
+
+* https://github.com/PageSpeedPlus/ufw-profiles
+* https://github.com/Rackster/ufw-profiles
+
+### Dienst via Namen erlauben
+
+`ufw allow <service name>`
+
+Beispiel: SSH Service erlauben.
+
+`ufw allow ssh`
+
+## CloudFlare IPs
+
 Script to update UFW with Cloudflare IPs
 
 This script was kindly [written by Leow Kah Man](https://www.leowkahman.com/2016/05/02/automate-raspberry-pi-ufw-allow-cloudflare-inbound/) and I've added a few tweaks!
