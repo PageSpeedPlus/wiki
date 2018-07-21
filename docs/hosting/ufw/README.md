@@ -81,3 +81,7 @@ and add the event;
 **OR**
 
 If using node-red, simply add ```sudo /your/path/cloudflare-ufw/./cloudflare-ufw.sh``` to an 'exec node' and inject it every week.
+
+## Links
+
+- [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
