@@ -188,36 +188,100 @@ Als Erweiterung zu [http://sergejmueller.github.io](http://sergejmueller.github.
 * [iconmelon](http://iconmelon.com)
 
 
-**API**
-* https://prismic.io
-* https://ip2country.info
-* https://clarifai.com
+## Wiki
+
+* [Sergej Müller Wiki](https://github.com/sergejmueller/sergejmueller.github.io/wiki)
+* [Wiki Mike Jung - Performence](https://wiki.mikejung.biz/Category:Performance)
+* [WordPress Nginx » Tutorials](https://easyengine.io/wordpress-nginx/tutorials/)
+
+## Debian
+
+* [RSA Key erstellen - Debian](https://www.server-world.info/en/note?os=Debian_8&p=ssh&f=4)
+* [Automatic Security Updates for Debian](https://guides.wp-bullet.com/configure-automatic-security-updates-debian/)
+* [Initial Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-debian-8)
+
+## Ubuntu 16.04
+
+* [how-to-setup-automatic-security-updates](https://www.howtoforge.com/tutorial/how-to-setup-automatic-security-updates-on-ubuntu-1604/)
+
+## ISP Config 3
+
+* [Ispconfig/ispconfig3 Git Lab](https://git.ispconfig.org/ispconfig/ispconfig3)
+* [How to set the PassivePortRange in pure-ftpd](https://www.faqforge.com/linux/controlpanels/ispconfig3/how-to-set-the-passiveportrange-in-pure-ftpd-on-denian-and-ubuntu-linux/)
+* [Which ports are used on a ISPConfig 3 server and shall be open in the firewall?](https://www.faqforge.com/linux/which-ports-are-used-on-a-ispconfig-3-server-and-shall-be-open-in-the-firewall/)
+* [PHP support for jailed SSH users in ISPConfig](https://www.faqforge.com/linux/add-php-in-ssh-jail-ispconfig-3/)
+* [Is there a recommended Linux distribution for ISPConfig 3?](https://www.faqforge.com/linux/controlpanels/ispconfig3/is-there-a-recommended-linux-distribution-for-ispconfig-3/)
+* [Set stricter PHP settings to secure joomla and wordpress installations](https://www.faqforge.com/linux/controlpanels/ispconfig2/set-stricter-php-settings-to-secure-joomla-and-wordpress-installations/)
+
+### ISPConfig Themes
+
+* https://gitlab.com/arunanson/delight-isp-config-theme/tree/master
+
+## Nginx
+
+* [NGINX – sichere SSL/TLS Konfiguration mit Perfect Forward Secrecy (PFS) und A+ Wertung von Qualys SSL Labs](https://der-linux-admin.de/2015/01/nginx-sichere-ssltls-konfiguration-mit-perfect-forward-secrecy-pfs-und-wertung-von-qualys-ssl-labs/)
+* [NGINX Plus Sizing Guide: How We Tested](https://www.nginx.com/blog/nginx-plus-sizing-guide-how-we-tested/)
+* [Performance Tuning – Tipps & Tricks](https://www.nginx.com/blog/performance-tuning-tips-tricks/)
+* [VirtuBox Nginx-ee Wki](https://github.com/VirtuBox/nginx-ee/wiki)
+
+## MariaDB
+
+* [Setting, Changing And Resetting MySQL Root Passwords](https://www.howtoforge.com/setting-changing-resetting-mysql-root-passwords)
+* [MySQL Optimization](https://dev.mysql.com/doc/refman/5.7/en/optimization.html)
+
+## PHP
+
+* [PHP7.2](https://kinsta.com/blog/php-7-2/)
+* [PHP Supported Versionen](http://php.net/supported-versions.php)
+
+## HHVM
+
+* [Repo](https://docs.hhvm.com/hhvm/installation/linux)
+* [PHP 7 Support](https://hhvm.com/blog/10859/php-7-support)
 
 
-**Crowdfunding**
+## [Linux Malware Detect](https://www.rfxn.com/projects/linux-malware-detect/)
 
-* [Indiegogo: Globale Crowdfunding- und Fundraising-Website](https://www.indiegogo.com)
-* [Bountysource](https://www.bountysource.com)
+* [Malware finden auf Linux Servern](https://www.howtoforge.de/anleitung/malware-finden-auf-linux-servern/)
+* [Linux Malware Detect on Debian 6 with ISPConfig 3](https://www.howtoforge.com/community/threads/linux-malware-detect-on-debian-6-with-ispconfig-3.58440/#post-284504)
+* [Install Linux Malware Detect for WordPress on Debian 8 Jessie](https://guides.wp-bullet.com/install-linux-malware-detect-for-wordpress-on-debian-8-jessie/)
 
+## [Monitor and Detect Modified Files using Tripwire IDS](https://www.howtoforge.com/tutorial/how-to-monitor-and-detect-modified-files-using-tripwire-on-ubuntu-1604/)
 
-**Photovoltaik**
+## [Fail2Ban](http://www.fail2ban.org/wiki/index.php/Main_Page)
 
-* [[Balkon Solaranlage: Energiewende für Jedermann|Balkon Solaranlage: Energiewende für Jedermann]]
-* [PV potential estimation utility](http://re.jrc.ec.europa.eu/pvgis/apps4/pvest.php?lang=de&map=europe)
-* [Azimut – Abweichung in Winkelgrad](http://www.photovoltaiksolarstrom.de/photovoltaiklexikon/azimut)
+* [Preventing Brute Force Attacks With Fail2ban On Debian Etch](https://www.howtoforge.com/fail2ban_debian_etch)
+* [How to Integrate fail2ban with CloudFlare API v4 Guide](https://guides.wp-bullet.com/integrate-fail2ban-cloudflare-api-v4-guide/)
 
+## Munin
 
-**ICO**
+* [Installation Munin](https://www.howtoforge.com/community/threads/how-to-install-monit-and-munin-in-debian-8-nginx-and-configure-in-ispconfig-3-1.76600/)
+* [Nginx Munin Conf](http://guide.munin-monitoring.org/en/latest/example/webserver/nginx.html)
 
-* [ICO Reviews – Globalhalo](https://globalhalo.com/category/ico-reviews/)
-* [Smart ICO Investor](https://smarticoinvestor.com)
-* [ICOrating](http://icorating.com)
-* [ICO Drops](https://icodrops.com)
-* [fliphodl](http://fliphodl.com)
+## [Monit](https://mmonit.com/)
 
+* [MariaDB in Monit](https://guides.wp-bullet.com/use-monit-to-monitor-restart-mysql-service-automatically/)
+* [Monit-Graph](https://github.com/danschultzer/monit-graph)
+* [Measure your server performance Monit-Graph](https://dreamconception.com/tech/tools/measure-your-server-performance-with-monit-and-monit-graph/)
+* [Nginx Monit Graph Konfig](https://www.slimframework.com/docs/start/web-servers.html)
 
-**Ethereum**
+## UFW
 
-* [Bitcoin Forum](https://bitcointalk.org)
-* [MyEtherWallet: Open-Source & Client-Side Ether Wallet](https://www.myetherwallet.com)
-* [Ethereum BlockChain Explorer and Search](https://etherscan.io)
+* [UFW Dokumentation](https://help.ubuntu.com/community/UFW)
+
+## PureFTPd
+
+* [How to enable verbose logging in pure-ftpd on Debian Linux](https://www.faqforge.com/linux/controlpanels/ispconfig3/how-to-enable-debugging-in-pure-ftpd-on-debian-linux/)
+
+## AWStats
+
+* [How to change the language of AWStats statistics on Debian Linux (ISPConfig 3)](https://www.faqforge.com/linux/controlpanels/ispconfig3/how-to-change-the-language-of-awstats-statistics-on-debian-linux-ispconfig-3/)
+
+## Webalizer
+
+* [Change the language of webalizer statistics on Debian and Ubuntu Linux](https://www.faqforge.com/linux/controlpanels/ispconfig2/change-the-language-of-webalizer-statistics-on-debian-and-ubuntu-linux/)
+* [Webalizer Doku](ftp://ftp.mrunix.net/pub/webalizer/README)
+
+## Tools
+
+* [sysbench](https://www.howtoforge.de/anleitung/benchmark-ihres-systems-cpu-daten-io-mysql-durchfuhren-mit-sysbench/#navigation)
