@@ -2,14 +2,26 @@
 
 **[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
 
+- [GitHub](https://github.com/Neilpang/acme.sh) 
+
+## Installation
+
+```bash
+wget -O -  https://get.acme.sh | sh
+source ~/.bashrc 
+```
+
+```bash
 root@ee:~# acme.sh --list
 Main_Domain  KeyLength  SAN_Domains   Created                       Renew
 wpnginx.tk   "ec-384"   *.wpnginx.tk  Tue May 29 09:46:46 UTC 2018  Sat Jul 28 09:46:46 UTC 2018
+```
 
 ## Kommandos
 
-Usage: acme.sh  command ...[parameters]....
+Usage: `acme.sh  command ...[parameters]....`
 
+```bash
 Commands:
   --help, -h               Show this help message.
   --version, -v            Show version info.
@@ -103,3 +115,4 @@ Parameters:
   --use-wget                        Force to use wget, if you have both curl and wget installed.
   --yes-I-know-dns-manual-mode-enough-go-ahead-please  Force to use dns manual mode: https://github.com/Neilpang/acme.sh/wiki/dns-manual-mode
   --branch, -b                      Only valid for '--upgrade' command, specifies the branch name to upgrade to.
+  ```
