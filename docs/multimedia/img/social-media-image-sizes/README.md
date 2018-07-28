@@ -1,3 +1,7 @@
+# 2018 Social Media Image Sizes Cheat Sheet
+
+- [2018 Social Media Image Sizes Cheat Sheet](https://makeawebsitehub.com/social-media-image-sizes-cheat-sheet/)
+
 ## Twitter Image Sizing Tips
 
 Profile Photo: 400 x 400 pixels / Displays at 200 x 200 pixels (a maximum 100 KB file size)
