@@ -38,7 +38,15 @@ Das nachfolgende Gist zeigt anhand von WeMonit (Monitoring Service) eine Lösung
 * Je nach Servereinstellung ist es notwendig, `sudo` voranzustellen.
 
 
+
 ## Links
+
+### Mehr Tipps
 
 * https://www.scalescale.com/tips/nginx/
 * https://bugs.launchpad.net/nginx/+bug/1450770
+
+### Nginx.conf
+
+* [nginx Redirect 404 Errors to Homepage WordPress](https://guides.wp-bullet.com/nginx-redirect-404-errors-to-homepage-wordpress/)
+
