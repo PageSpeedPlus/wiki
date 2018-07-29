@@ -51,6 +51,8 @@ Das nachfolgende Gist zeigt anhand von WeMonit (Monitoring Service) eine Lösung
 * [nginx Redirect 404 Errors to Homepage WordPress](https://guides.wp-bullet.com/nginx-redirect-404-errors-to-homepage-wordpress/)
 * [Configure fail2ban to Ban nginx 403 Forbidden Requests](https://guides.wp-bullet.com/configure-fail2ban-to-ban-nginx-403-forbidden-requests/)
 * [Protect WordPress wp-login with nginx HTTP Auth + fail2ban](https://guides.wp-bullet.com/protect-wordpress-wp-login-nginx-http-auth-fail2ban/)
+* [Protect WordPress wp-login with Apache HTTP Auth + fail2ban
+](https://guides.wp-bullet.com/protect-wordpress-wp-login-apache-http-auth-fail2ban/)
 * [Install Redis Object Cache for WordPress PHP 7 on Ubuntu 16.04](https://guides.wp-bullet.com/install-redis-object-cache-for-wordpress-php-7-on-ubuntu-16-04/)
 * [Automatically Whitelist ManageWP IPs on Cloudflare bash Script
 ](https://guides.wp-bullet.com/automatically-whitelist-managewp-ips-cloudflare-bash-script/)
