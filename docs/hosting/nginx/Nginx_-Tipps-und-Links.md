@@ -50,4 +50,6 @@ Das nachfolgende Gist zeigt anhand von WeMonit (Monitoring Service) eine Lösung
 
 * [nginx Redirect 404 Errors to Homepage WordPress](https://guides.wp-bullet.com/nginx-redirect-404-errors-to-homepage-wordpress/)
 * [Configure fail2ban to Ban nginx 403 Forbidden Requests](https://guides.wp-bullet.com/configure-fail2ban-to-ban-nginx-403-forbidden-requests/)
+* [Protect WordPress wp-login with nginx HTTP Auth + fail2ban](https://guides.wp-bullet.com/protect-wordpress-wp-login-nginx-http-auth-fail2ban/)
+
 
