@@ -4,7 +4,7 @@
 
 **[Zum Inhaltsverzeichnis](https://wiki.page-speed.ninja/)**
 
-## _Inhaltsverzeichnis_
+## _Docker-Style_
 
   * [Unterpunkt 1](#unterpunkt-1)
     * [Unterpunkt 1.1](#idea)
