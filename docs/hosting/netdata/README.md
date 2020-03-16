@@ -7,3 +7,6 @@
 ```bash
 ./netdata-installer.sh
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwNTgwMTg3XX0=
+-->
