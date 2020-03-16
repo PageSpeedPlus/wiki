@@ -116,3 +116,6 @@ Parameters:
   --yes-I-know-dns-manual-mode-enough-go-ahead-please  Force to use dns manual mode: https://github.com/Neilpang/acme.sh/wiki/dns-manual-mode
   --branch, -b                      Only valid for '--upgrade' command, specifies the branch name to upgrade to.
   ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTUzNTQwMTk3NV19
+-->
